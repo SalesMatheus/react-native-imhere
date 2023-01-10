@@ -1,18 +1,16 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React from "react";
+import { Text, TextInput, View } from "react-native";
 
-import { styles } from './styles';
+import { styles } from "./styles";
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}>
-        Nome do evento
-      </Text>
-      
-      <Text style={styles.eventDate}>
-        Sexta, 4 de Novembro de 2022
-      </Text>
+      <Text style={styles.eventName}>Nome do evento</Text>
+
+      <Text style={styles.eventDate}>Sexta, 4 de Novembro de 2022</Text>
+
+      <TextInput style={styles.input} placeholderTextColor="#6B6B6B" />
     </View>
   );
 }
