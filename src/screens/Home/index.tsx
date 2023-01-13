@@ -14,11 +14,13 @@ export default function Home() {
 
       <Text style={styles.eventDate}>Sexta, 4 de Novembro de 2022</Text>
 
-      <TextInput style={styles.input} placeholderTextColor="#6B6B6B" />
+      <View style={styles.form}>
+        <TextInput style={styles.input} placeholderTextColor="#6B6B6B" />
 
-      <TouchableOpacity style={styles.button} onPress={handlePArticipanteAdd}>
-        <Text style={styles.buttonText}>+</Text>
-      </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handlePArticipanteAdd}>
+          <Text style={styles.buttonText}>+</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
